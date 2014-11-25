@@ -4,7 +4,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.integer :priority
-
+      t.boolean :status, default: "false"
       t.timestamps
     end
   end
